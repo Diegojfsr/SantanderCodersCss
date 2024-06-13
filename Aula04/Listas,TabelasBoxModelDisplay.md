@@ -30,7 +30,7 @@ Posicionamento de Elementos
 --- absolute
 --- fixed
 --- sticky
-- Propriedade Displlay
+- Propriedade Display
 -- none
 -- inline
 -- block
