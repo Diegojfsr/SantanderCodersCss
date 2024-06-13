@@ -1,0 +1,35 @@
+
+
+
+
+
+.box p, button {
+    font-size: 4rem;
+}
+
+.boxes {
+    height: calc(100vh);
+    position: relative;
+
+    display: grid;
+    justify-content: flex-start;
+    gap: 2rem 5rem;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 300px 2fr;
+    grid-template-rows: minmax(200px, 1fr) 2fr;
+
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr repeat(3, 1fr);
+
+    row-gap: 1rem;
+    column-gap: 5rem;
+
+    
+
+
+}
+
+
+
