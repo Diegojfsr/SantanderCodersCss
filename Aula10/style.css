@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --defalt-border: 0.1rem solid rgb(0, 0, 0, 0.15);
+    --defalt-border-radius: 1.2rem;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+    ". . . . ."
+    ". hero . form ."
+    ". hero . form ."
+    ". . . . ."
+    ;
+    gap: 8.5rem;
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: hero;
+}
+
+
+
+
+aside h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+aside h1 span, main h2 span {
+    color: blueviolet;
+}
+
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: var(--defalt-border);
+    padding: 4.4rem 5.7rem;
+    border-radius: var(--defalt-border-radius);
+    position: relative;
+
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a {
+    border-radius: var(--defalt-border-radius);
+    text-decoration: none;
+    height: 5.5rem;
+    font-size: 2.4rem;
+    background-color: rgb(43, 226, 208);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+}
+
+main .actions a + a {
+    background-color: rgb(165, 42, 75);
+    margin-top: 4.8rem;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+main header i {
+    font-size: 2.5rem;
+    color: rgb(165, 42, 75);;
+}
+
+
+main footer p {
+    margin-top: 8rem;
+    font-size: 1.6rem;
+}
+
+main footer a {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+    color: black;
+}
+
+main form {
+    margin-top: 1.6rem;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+
+
+main form :is(input, select) {
+    width: 489px;
+    height: 5.5rem;
+    display: block;
+
+    background: white;
+    border: var(--defalt-border);
+    border-radius: var(--defalt-border-radius);
+}
+
+main form select {
+    appearance: none;
+}
+
+main form .select-div {
+    position: relative;
+}
+
+main form .select-div::after {
+    top: 1.6rem;
+    right: 1.6rem;
+    font-size: 2.2rem;
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    color: rgb(43, 226, 208);
+}
+
+main form .points {
+    position: relative;
+}
+
+main form input + button {
+    position: absolute;
+    right: -3.8rem;
+    top: calc(2.7rem + 2.3rem);
+    background-color: transparent;
+    border: none;
+    color: rgb(43, 226, 208);
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+
+
